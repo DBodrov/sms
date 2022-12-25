@@ -52,7 +52,6 @@ export function createSMS(rawText: string, limit: number = 140) {
   let sms: string = '';
   const words = text.split(' ');
   const fragmentsNumber = calcFragmentsNumber(text, limit);
-  console.log('sms count =', fragmentsNumber);
   let fragmentCount = 1;
   const getSuffix = () => createSuffix(fragmentCount, fragmentsNumber);
 
